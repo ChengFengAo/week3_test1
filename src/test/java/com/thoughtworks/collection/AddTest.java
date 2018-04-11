@@ -8,7 +8,6 @@ import java.util.List;
 import static org.fest.assertions.api.Assertions.assertThat;
 
 public class AddTest {
-
     @Test
     public void should_get_sum_of_evens() {
         //求leftBorder 和rightBorder之间的偶数和
@@ -36,9 +35,7 @@ public class AddTest {
         //求数组中每个元素的3倍加2的和
         Integer[] array = new Integer[]{1, 5, 7, 11, 35, 67};
         List<Integer> arrayList = Arrays.asList(array);
-
         Add add = new Add();
-
         assertThat(add.getSumTripleAndAddTwo(arrayList)).isEqualTo(390);
     }
 
@@ -71,12 +68,9 @@ public class AddTest {
         // 数组中前一个元素和后一个元素的和的3倍的数组
         Integer[] array = new Integer[]{1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21};
         List<Integer> arrayList = Arrays.asList(array);
-
         Add add = new Add();
-
         Integer[] result = new Integer[]{12, 24, 36, 48, 60, 72, 84, 96, 108, 120};
         List<Integer> resultList = Arrays.asList(result);
-
         assertThat(add.getProcessedList(arrayList)).isEqualTo(resultList);
     }
 
